@@ -10,6 +10,8 @@ import pprint
 logging.basicConfig(filename='test.log', level=logging.DEBUG)
 logger = logging.getLogger("netmiko")
 huawei_5720 = {}
+
+
 try:
     huawei_5720 = {'device_type': 'huawei_ssh', 'ip': '172.26.30.78', 'username': 'iteco', 'password': 'Iteco@2010'}
     net_connect = ConnectHandler(**huawei_5720)
