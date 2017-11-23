@@ -3,9 +3,11 @@
 from netmiko import ConnectHandler
 from datetime import datetime
 import paramiko
+import logging
+import re
+
 huawei_5720 = {}
 
-import logging
 logging.basicConfig(filename='test.log', level=logging.DEBUG)
 logger = logging.getLogger("netmiko")
 
