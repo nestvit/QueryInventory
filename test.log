@@ -1,0 +1,547 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0x2e57150
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.3.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0--
+INFO:paramiko.transport:Connected (version 2.0, client -)
+DEBUG:paramiko.transport:kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ecdsa-sha2-nistp521', 'ssh-dss', 'ssh-rsa'] client encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] server encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] client mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none', 'zlib'] server compress:['none', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey agreed: ecdsa-sha2-nistp521
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ecdsa-sha2-nistp521 host key for 172.26.30.78: b'd7bc3e8f4dcae33acc03e064431bf8ed'
+DEBUG:paramiko.transport:userauth is OK
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x2fa7150
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.3.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0--
+INFO:paramiko.transport:Connected (version 2.0, client -)
+DEBUG:paramiko.transport:kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ecdsa-sha2-nistp521', 'ssh-dss', 'ssh-rsa'] client encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] server encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] client mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none', 'zlib'] server compress:['none', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey agreed: ecdsa-sha2-nistp521
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ecdsa-sha2-nistp521 host key for 172.26.30.78: b'd7bc3e8f4dcae33acc03e064431bf8ed'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2017-11-23 21:20:12+03:00.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'screen-length 0 temporary\n'
+DEBUG:netmiko:_read_channel_expect read_data: s
+DEBUG:netmiko:_read_channel_expect read_data: creen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'disp ip int brief\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: disp ip int brief
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(E): E-Trunk down
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 9
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 9
+
+Interface                         IP Address/Mask      Physical   Protocol  
+GigabitEthernet0/0/11             192.168.30.30/24     down       down      
+LoopBack0                         10.4.119.15/32       up         up(s)     
+MEth0/0/1                         172.26.30.78/24      up         up        
+NULL0                             unassigned           up         up(s)     
+Vlanif1                           unassigned           down       down      
+Vlanif100                         10.4.133.1/25        down       down      
+Vlanif101                         10.4.159.193/26      up         up        
+Vlanif102                         10.4.174.129/28      down       down      
+Vlanif103                         10.4.178.1/28        down       down      
+Vlanif1111                        10.4.240.23/31       down       down      
+Vlanif1212                        10.4.120.147/31      down       down      
+Vlanif1312                        10.4.120.147/31      down       down      
+Vlanif1411                        10.4.240.149/31      down       down      
+
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'disp device\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: disp device
+S5720-32X-EI-AC's Device status:
+Slot Sub  Type                  Online    Power    Register     Status   Role  
+-------------------------------------------------------------------------------
+0    -    S5720-32X-EI          Present   PowerOn  Registered   Normal   Master
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x2eb7150
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.3.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0--
+INFO:paramiko.transport:Connected (version 2.0, client -)
+DEBUG:paramiko.transport:kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ecdsa-sha2-nistp521', 'ssh-dss', 'ssh-rsa'] client encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] server encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] client mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none', 'zlib'] server compress:['none', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey agreed: ecdsa-sha2-nistp521
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ecdsa-sha2-nistp521 host key for 172.26.30.78: b'd7bc3e8f4dcae33acc03e064431bf8ed'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2017-11-23 21:26:42+03:00.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'screen-length 0 temporary\n'
+DEBUG:netmiko:_read_channel_expect read_data: scr
+DEBUG:netmiko:_read_channel_expect read_data: een-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'system-view\n'
+DEBUG:netmiko:_read_channel_expect read_data: system
+DEBUG:netmiko:_read_channel_expect read_data: -view
+Enter system view, return user view with Ctrl+Z.
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'display ip inter br\n'
+DEBUG:netmiko:write_channel: b'display device\n'
+DEBUG:netmiko:read_channel: display ip inter br
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(E): E-Trunk down
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 9
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 9
+
+Interface                         IP Address/Mask      Physical   Protocol  
+GigabitEthernet0/0/11             192.168.30.30/24     down       down      
+LoopBack0                         10.4.119.15/32       up         up(s)     
+MEth0/0/1                         172.26.30.78/24      up         up        
+NULL0                             unassigned           up         up(s)     
+Vlanif1                           unassigned           down       down      
+Vlanif100                         10.4.133.1/25        down       down      
+Vlanif101                         10.4.159.193/26      up         up        
+Vlanif102                         10.4.174.129/28      down       down      
+Vlanif103                         10.4.178.1/28        down       down      
+Vlanif1111                        10.4.240.23/31       down       down      
+Vlanif1212                        10.4.120.147/31      down       down      
+Vlanif1312                        10.4.120.147/31      down       down      
+Vlanif1411                        10.4.240.149/31      down       down      
+
+[NAK07-ACWV1--01]display device
+S5720-32X-EI-AC's Device status:
+Slot Sub  Type                  Online    Power    Register     Status   Role  
+-------------------------------------------------------------------------------
+0    -    S5720-32X-EI          Present   PowerOn  Registered   Normal   Master
+[NAK07-ACWV1--01]
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'return\n'
+DEBUG:netmiko:_read_channel_expect read_data: ret
+DEBUG:netmiko:_read_channel_expect read_data: urn
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:starting thread (client mode): 0x2f37150
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.3.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0--
+INFO:paramiko.transport:Connected (version 2.0, client -)
+DEBUG:paramiko.transport:kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ecdsa-sha2-nistp521', 'ssh-dss', 'ssh-rsa'] client encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] server encrypt:['aes256-ctr', 'aes128-ctr', 'aes256-cbc', 'aes128-cbc', '3des-cbc'] client mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha2-256', 'hmac-sha2-256-96', 'hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none', 'zlib'] server compress:['none', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey agreed: ecdsa-sha2-nistp521
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ecdsa-sha2-nistp521 host key for 172.26.30.78: b'd7bc3e8f4dcae33acc03e064431bf8ed'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2017-11-23 21:32:23+03:00.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'screen-length 0 temporary\n'
+DEBUG:netmiko:_read_channel_expect read_data: sc
+DEBUG:netmiko:_read_channel_expect read_data: reen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<NAK07-ACWV1--01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'system-view\n'
+DEBUG:netmiko:_read_channel_expect read_data: s
+DEBUG:netmiko:_read_channel_expect read_data: ystem-view
+Enter system view, return user view with Ctrl+Z.
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'display ip inter br\n'
+DEBUG:netmiko:write_channel: b'display device\n'
+DEBUG:netmiko:write_channel: b'disp ver\n'
+DEBUG:netmiko:write_channel: b'display elabel\n'
+DEBUG:netmiko:write_channel: b'y\n'
+DEBUG:netmiko:write_channel: b'disp device manufacture-info\n'
+DEBUG:netmiko:write_channel: b'disp alarm active\n'
+DEBUG:netmiko:read_channel: display ip inter br
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(E): E-Trunk down
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 9
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 9
+
+Interface                         IP Address/Mask      Physical   Protocol  
+GigabitEthernet0/0/11             192.168.30.30/24     down       down      
+LoopBack0                         10.4.119.15/32       up         up(s)     
+MEth0/0/1                         172.26.30.78/24      up         up        
+NULL0                             unassigned           up         up(s)     
+Vlanif1                           unassigned           down       down      
+Vlanif100                         10.4.133.1/25        down       down      
+Vlanif101                         10.4.159.193/26      up         up        
+Vlanif102                         10.4.174.129/28      down       down      
+Vlanif103                         10.4.178.1/28        down       down      
+Vlanif1111                        10.4.240.23/31       down       down      
+Vlanif1212                        10.4.120.147/31      down       down      
+Vlanif1312                        10.4.120.147/31      down       down      
+Vlanif1411                        10.4.240.149/31      down       down      
+
+[NAK07-ACWV1--01]display device
+S5720-32X-EI-AC's Device status:
+Slot Sub  Type                  Online    Power    Register     Status   Role  
+-------------------------------------------------------------------------------
+0    -    S5720-32X-EI          Present   PowerOn  Registered   Normal   Master
+[NAK07-ACWV1--01]disp ver
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 5.170 (S5720 V200R010C00SPC600)
+Copyright (C) 2000-2016 HUAWEI TECH CO., LTD
+HUAWEI S5720-32X-EI-AC Routing Switch uptime is 1 week, 1 day, 22 hours, 15 minutes
+
+ES5D2T32S002 0(Master)  : uptime is 1 week, 1 day, 22 hours, 14 minutes
+DDR    Memory Size      : 2048       M bytes
+FLASH  Memory Size      : 344        M bytes
+Pcb           Version   : VER.B
+BootROM       Version   : 020a.0001
+BootLoad      Version   : 020a.0001
+CPLD          Version   : 0106 
+Software      Version   : VRP (R) Software, Version 5.170 (V200R010C00SPC600)
+[NAK07-ACWV1--01]display elabel
+Warning: It may take a long time to excute this command. Continue? [Y/N]:y
+Info: It is executing, please wait...
+/$[System Integration Version]
+/$SystemIntegrationVersion=3.0
+
+
+[Slot_0]
+/$[Board Integration Version]
+/$BoardIntegrationVersion=3.0
+
+
+[Main_Board]
+
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=S5720-32X-EI-AC
+BarCode=210235958610F7000089
+Item=02359586
+Description=Assembling Components,S5720-32X-EI-AC,S5720-32X-EI-AC,S5720-32X-EI-AC(24 Ethernet 10/100/1000 ports,4 Gig  SFP,4 10 Gig SFP+,AC 110/220V,front access)
+Manufactured=2015-07-06
+VendorName=Huawei
+IssueNumber=00
+CLEICode=
+BOM=
+
+
+
+
+[Port_GigabitEthernet0/0/25]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/26]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/27]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/28]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/1]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/2]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/3]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/4]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[StackPort 0/1]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[StackPort 0/2]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+[NAK07-ACWV1--01]disp device manufacture-info
+Slot  Sub  Serial-number          Manu-date
+- - - - - - - - - - - - - - - - - - - - - -
+0     -    210235958610F7000089   2015-07-06
+[NAK07-ACWV1--01]disp alarm active
+A/B/C/D/E/F/G/H/I/J
+A=Sequence, B=RootKindFlag(Independent|RootCause|nonRootCause)
+C=Generating time, D=Clearing time
+E=ID, F=Name, G=Level, H=State
+I=Description information for locating(Para info, Reason info)
+J=RootCause alarm sequence(Only for nonRootCause alarm)
+
+  1/Independent/2017-11-14 23:22:54+03:00/-/0x41592002/hwExtAllMemberDownNotify/Minor/Start/OID 1.3.6.1.4.1.2011.5.25.41.3.28 The last member interface link status changes to down. (TrunkIfIndex=38, TrunkName=Eth-Trunk1)
+  34/Independent/2017-11-18 23:37:02+03:00/-/0x502001/linkDown/Critical/Start/OID 1.3.6.1.6.3.1.1.5.3 Interface 42 turned into DOWN state.(AdminStatus=1,OperStatus=2,InterfaceName=Vlanif100)
+  35/Independent/2017-11-18 23:37:02+03:00/-/0x70292002/mplsL3VpnVrfDown/Major/Start/OID 1.3.6.1.2.1.10.166.11.0.2 The interface bound to the VPN instance went Down. (VpnInstanceName=UC_PROD, IfIndex=42, BindingVpnInstanceName=UC_PROD, IfCurRowStatus=2, OperationStatus=2, IfName=Vlanif100)
+  36/Independent/2017-11-18 23:37:02+03:00/-/0x70172000/ospfIfStateChange/Major/Start/OID 1.3.6.1.2.1.14.16.2.16: The status of the non-virtual interface changes. (IfIpAddress=10.4.133.1, AddressLessIf=0, ProcessId=1, AreaId=0.0.4.87, IfnetIndex=42, ProcessId=1, RouterId=10.4.133.1, IfState=1, IfName=Vlanif100, InstanceName=UC_PROD, IfChgReason=2)
+  39/Independent/2017-11-20 23:52:23+03:00/-/0x502001/linkDown/Critical/Start/OID 1.3.6.1.6.3.1.1.5.3 Interface 16 turned into DOWN state.(AdminStatus=1,OperStatus=2,InterfaceName=GigabitEthernet0/0/11)
+  40/Independent/2017-11-20 23:52:23+03:00/-/0x70292002/mplsL3VpnVrfDown/Major/Start/OID 1.3.6.1.2.1.10.166.11.0.2 The interface bound to the VPN instance went Down. (VpnInstanceName=VRF-30, IfIndex=16, BindingVpnInstanceName=VRF-30, IfCurRowStatus=2, OperationStatus=2, IfName=GigabitEthernet0/0/11)
+[NAK07-ACWV1--01]
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+[NAK07-ACWV1--01]
+DEBUG:netmiko:write_channel: b'return\n'
+DEBUG:netmiko:_read_channel_expect read_data: retur
+DEBUG:netmiko:_read_channel_expect read_data: n
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:_read_channel_expect read_data: 
+<NAK07-ACWV1--01>
+DEBUG:netmiko:write_channel: b'exit\n'
