@@ -1,3 +1,4 @@
+quit
 display ip inter br
 display device
 disp ver
