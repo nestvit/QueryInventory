@@ -1,0 +1,8 @@
+quit
+display ip inter br
+display device
+disp ver
+display elabel
+y
+disp device manufacture-info
+disp alarm active

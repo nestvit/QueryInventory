@@ -1,0 +1,411 @@
+
+
+disp ver
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 5.170 (S5720 V200R010C00SPC600)
+Copyright (C) 2000-2016 HUAWEI TECH CO., LTD
+HUAWEI S5720-32X-EI-AC Routing Switch uptime is 0 week, 0 day, 0 hour, 59 minutes
+
+ES5D2T32S002 0(Master)  : uptime is 0 week, 0 day, 0 hour, 58 minutes
+DDR    Memory Size      : 2048       M bytes
+FLASH  Memory Size      : 344        M bytes
+Pcb           Version   : VER.B
+BootROM       Version   : 020a.0001
+BootLoad      Version   : 020a.0001
+CPLD          Version   : 0106 
+Software      Version   : VRP (R) Software, Version 5.170 (V200R010C00SPC600)
+
+
+display device
+S5720-32X-EI-AC's Device status:
+Slot Sub  Type                  Online    Power    Register     Status   Role  
+-------------------------------------------------------------------------------
+0    -    S5720-32X-EI          Present   PowerOn  Registered   Normal   Master
+
+<NAK07-ACWV1--01> disp device slot 0
+*down: administratively down
+
+S5720-32X-EI-AC's Device status:
+Slot Sub  Type                  Online    Power    Register     Status   Role  
+-------------------------------------------------------------------------------
+0    -    S5720-32X-EI          Present   PowerOn  Registered   Normal   Master
+-------------------------------------------------------------------------------
+  Board Type        : S5720-32X-EI
+  Board Description : 24 Ethernet 10/100/1000 ports, 4 Gig SFP, 4 10 Gig SFP+, AC 110/220V, front access
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+Port     Port       Optic     MDI     Speed   Duplex  Flow-    Port   PoE    
+         Type       Status            (Mbps)          Ctrl     State  State  
+-------------------------------------------------------------------------------
+0/0/1    GE(C)      Absent    Auto    1000    Full    Disable  Up     -      
+0/0/2    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/3    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/4    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/5    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/6    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/7    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/8    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/9    GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/10   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/11   GE(C)      Absent    Auto    1000    Full    Disable  Up     -      
+0/0/12   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/13   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/14   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/15   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/16   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/17   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/18   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/19   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/20   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/21   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/22   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/23   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/24   GE(C)      Absent    Auto    1000    Full    Disable  Down   -      
+0/0/25   GE(F)      Absent    -       1000    Full    Disable  Down   -      
+0/0/26   GE(F)      Absent    -       1000    Full    Disable  *down  -      
+0/0/27   GE(F)      Absent    -       1000    Full    Disable  *down  -      
+0/0/28   GE(F)      Absent    -       1000    Full    Disable  Down   -      
+0/0/1    XGE(F)     Absent    -       10000   Full    Disable  Down   -      
+0/0/2    XGE(F)     Absent    -       10000   Full    Disable  Down   -      
+0/0/3    XGE(F)     Absent    -       10000   Full    Disable  Down   -      
+0/0/4    XGE(F)     Absent    -       10000   Full    Disable  Down   -      
+
+<NAK07-ACWV1--01>display elabel slot 0
+Warning: It may take a long time to excute this command. Continue? [Y/N]:y
+Info: It is executing, please wait...
+/$[System Integration Version]
+/$SystemIntegrationVersion=3.0
+
+
+[Slot_0]
+/$[Board Integration Version]
+/$BoardIntegrationVersion=3.0
+
+
+[Main_Board]
+
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=S5720-32X-EI-AC
+BarCode=210235958610F7000089
+Item=02359586
+Description=Assembling Components,S5720-32X-EI-AC,S5720-32X-EI-AC,S5720-32X-EI-AC(24 Ethernet 10/100/1000 ports,4 Gig  SFP,4 10 Gig SFP+,AC 110/220V,front access)
+Manufactured=2015-07-06
+VendorName=Huawei
+IssueNumber=00
+CLEICode=
+BOM=
+
+
+
+
+[Port_GigabitEthernet0/0/25]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/26]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/27]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_GigabitEthernet0/0/28]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/1]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/2]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/3]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[Port_XGigabitEthernet0/0/4]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[StackPort 0/1]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+
+[StackPort 0/2]
+/$[ArchivesInfo Version]
+/$ArchivesInfoVersion=3.0
+
+
+[Board Properties]
+BoardType=
+BarCode=
+Item=
+Description=
+Manufactured=
+/$VendorName=
+IssueNumber=
+CLEICode=
+BOM=
+
+<NAK07-ACWV1--01> disp device manufacture-info 
+Slot  Sub  Serial-number          Manu-date
+- - - - - - - - - - - - - - - - - - - - - -
+0     -    210235958610F7000089   2015-07-06
+<NAK07-ACWV1--01>
+
+
+<NAK07-ACWV1--01>disp transceiver interface XGigabitEthernet 0/0/1
+Info: Port XGigabitEthernet0/0/1, transceiver is absent. 
+
+<NAK07-ACWV1--01>disp fan
+-------------------------------------------------------------------------
+ Slot  FanID   Online    Status    Speed     Mode     Airflow            
+-------------------------------------------------------------------------
+ 0     1       Present   Normal    30%       Auto     Side-to-Side
+<NAK07-ACWV1--01>
+
+
+<HUAWEI> display transceiver interface gigabitethernet 0/0/1 verbose
+
+GigabitEthernet0/0/1 transceiver information:
+-------------------------------------------------------------
+Common information:
+  Transceiver Type               :1000_BASE_SX_SFP
+  Connector Type                 :LC
+  Wavelength(nm)                 :850
+  Transfer Distance(m)           :300(50um),150(62.5um)
+  Digital Diagnostic Monitoring  :YES
+  Vendor Name                    :SumitomoElectric
+  Vendor Part Number             :HFBR-5710L 
+  Ordering Name                  :
+-------------------------------------------------------------
+Manufacture information:
+  Manu. Serial Number            :88K056C10353
+  Manufacturing Date             :2008-08-08
+  Vendor Name                    :SumitomoElectric
+-------------------------------------------------------------
+Diagnostic information:
+  Temperature(°C)               :26.00
+  Temp High Threshold(°C)       :85.00
+  Temp Low  Threshold(°C)       :-40.00
+  Voltage(V)                    :3.29
+  Volt High Threshold(V)        :3.64
+  Volt Low  Threshold(V)        :2.95
+  Bias Current(mA)              :4.57
+  Bias High Threshold(mA)       :9.00
+  Bias Low  Threshold(mA)       :2.00
+  RX Power(dBM)                 :-40.00           //Indicate the current receive power of the optical module.
+  RX Power High Threshold(dBM)  :0.00             //Indicate the receive power upper alarm threshold of the optical module.
+  RX Power Low  Threshold(dBM)  :-16.99           //Indicate the receive power lower alarm threshold of the optical module.
+  TX Power(dBM)                 :-5.03            //Indicate the current transmit power of the optical module.
+  TX Power High Threshold(dBM)  :-2.22            //Indicate the transmit power upper alarm threshold of the optical module.
+  TX Power Low  Threshold(dBM)  :-6.99            //Indicate the transmit power lower alarm threshold of the optical module.
+-------------------------------------------------------------
+
+<HUAWEI> display transceiver interface gigabitethernet 0/0/1
+
+GigabitEthernet0/0/1 transceiver information:
+-------------------------------------------------------------
+Common information:
+  Transceiver Type               :1000_BASE_SX_SFP
+  Connector Type                 :LC
+  Wavelength(nm)             :850
+  Transfer Distance(m)           :300(50um),150(62.5um)
+  Digital Diagnostic Monitoring  :YES
+  Vendor Name                    :SumitomoElectric
+  Vendor Part Number             :HFBR-5710L 
+  Ordering Name                  :
+-------------------------------------------------------------
+Manufacture information:
+  Manu. Serial Number            :88K056C10353
+  Manufacturing Date             :2008-08-08
+  Vendor Name                    :SumitomoElectric
+-------------------------------------------------------------
+
+<HUAWEI> display version slot 0  
+ES5D2T52C001 0(Master)  : uptime is 0 week, 0 day, 20 hours, 46 minutes
+DDR    Memory Size      : 4096       M bytes
+FLASH  Memory Size      : 446        M bytes
+Pcb           Version   : VER.A
+BootROM       Version   : 020a.0001
+BootLoad      Version   : 020a.0001
+CPLD          Version   : 0108
+Software      Version   : VRP (R) Software, Version 5.160 (V200R010C00SPC300)
+PWR1 information
+Pcb           Version   : PWR VER.A
+
+<HUAWEI> display version
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 5.160 (S5720 V200R010C00SPC300)
+Copyright (C) 2000-2016 HUAWEI TECH CO., LTD
+HUAWEI S5720-56C-HI-AC Routing Switch uptime is 0 week, 0 day, 21 hours, 7 minutes
+
+ES5D2T52C001 0(Master)  : uptime is 0 week, 0 day, 21 hours, 4 minutes
+DDR    Memory Size      : 4096       M bytes
+FLASH  Memory Size      : 446        M bytes
+Pcb           Version   : VER.A
+BootROM       Version   : 020a.0001
+BootLoad      Version   : 020a.0001
+CPLD          Version   : 0108
+Software      Version   : VRP (R) Software, Version 5.160 (V200R010C00SPC300)
+PWR1 information
+Pcb           Version   : PWR VER.A
+
+display trapbuffer 
+
+
+<NAK07-ACWV1--01>disp alarm active 
+A/B/C/D/E/F/G/H/I/J
+A=Sequence, B=RootKindFlag(Independent|RootCause|nonRootCause)
+C=Generating time, D=Clearing time
+E=ID, F=Name, G=Level, H=State
+I=Description information for locating(Para info, Reason info)
+J=RootCause alarm sequence(Only for nonRootCause alarm)
+
+  1/Independent/2017-11-14 23:22:54+03:00/-/0x41592002/hwExtAllMemberDownNotify/Minor/Start/OID 1.3.6.1.4.1.2011.5.25.41.3.28 The last member interface link status changes to down. (TrunkIfIndex=38, TrunkName=Eth-Trunk1)
+<NAK07-ACWV1--01> 
+
+
+disp alarm history 
+
+
+<NAK07-ACWV1--01>display alarm urgent 
+ Alarm: 
+
+Alarm                    Slot      Date        Time(DST)     Location
+---------------------------------------------------------------------------
+
+<NAK07-ACWV1--01>
+
+
+
+
+
+
+
+
+
