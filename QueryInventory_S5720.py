@@ -10,11 +10,12 @@ import pprint
 logging.basicConfig(filename='test.log', level=logging.DEBUG)
 logger = logging.getLogger("netmiko")
 huawei_5720 = {}
+IPaddres = []
 
 with open('out.txt', 'r') as f:
     for line in f:
         print(line)
-        IPaddres = " + line.rstrip() + "
+        IPaddres.append(line.rstrip())
 
 try:
     huawei_5720 = {'device_type': 'huawei_ssh', 'ip': IPaddres, 'username': 'iteco', 'password': 'Iteco@2010'}
