@@ -99,7 +99,16 @@ IssueNumber=00
 CLEICode=
 BOM=
 
-
+[Board Properties]
+BoardType=S5720-32X-EI-AC
+BarCode=210235958610F7000090
+Item=02359586
+Description=Assembling Components,S5720-32X-EI-AC,S5720-32X-EI-AC,S5720-32X-EI-AC(24 Ethernet 10/100/1000 ports,4 Gig  SFP,4 10 Gig SFP+,AC 110/220V,front access)
+Manufactured=2015-07-07
+VendorName=Huawei
+IssueNumber=00
+CLEICode=
+BOM=
 
 
 [Port_GigabitEthernet0/0/25]
@@ -309,9 +318,9 @@ Manufacture information:
   Vendor Name                    :SumitomoElectric
 -------------------------------------------------------------
 Diagnostic information:
-  Temperature(°C)               :26.00
-  Temp High Threshold(°C)       :85.00
-  Temp Low  Threshold(°C)       :-40.00
+  Temperature(ï¿½C)               :26.00
+  Temp High Threshold(ï¿½C)       :85.00
+  Temp Low  Threshold(ï¿½C)       :-40.00
   Voltage(V)                    :3.29
   Volt High Threshold(V)        :3.64
   Volt Low  Threshold(V)        :2.95
