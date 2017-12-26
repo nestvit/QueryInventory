@@ -61,14 +61,21 @@ for row in result:
 text = 'INSERT INTO "main"."Nodes" ("segment","Hostname","HW_type","SW_version","Status","Data","Time")\
             VALUES ("' + str(Segment) + '","' + str(hostname)  + '","' + str(Type) + '","' + str(SW_version) + \
            '","' + str(Status) + '","' + CurrentData + '","' + CurrentTime + '")'
+
+print()
+print("#" * 100)
+
 try:
     con.execute(text)
+    print('Hostname "' + str(hostname) + '" is new')
+    print('Hostname was added')
 except sqlite3.IntegrityError as e:
     text = 'UPDATE nodes set HW_type = "' + str(Type) + '", SW_version = "' + str(SW_version) + '", \
     Status = "' + str(Status) + '", Data = "' + CurrentData + '", Time = "' + CurrentTime + '" \
     WHERE Hostname = "' + str(hostname) + '"'
     con.execute(text)
-    #print("Error occured: ", e)
+    print('Hostname "' + str(hostname) + '" is exist' )
+    print('Update was made')
 
 con.commit()
 
