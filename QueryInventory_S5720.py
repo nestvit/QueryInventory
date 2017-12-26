@@ -10,10 +10,15 @@ import pprint
 logging.basicConfig(filename='test.log', level=logging.DEBUG)
 logger = logging.getLogger("netmiko")
 huawei_5720 = {}
+IPaddres = []
 
+with open('out.txt', 'r') as f:
+    for line in f:
+        print(line)
+        IPaddres.append(line.rstrip())
 
 try:
-    huawei_5720 = {'device_type': 'huawei_ssh', 'ip': '172.26.30.78', 'username': 'iteco', 'password': 'Iteco@2010'}
+    huawei_5720 = {'device_type': 'huawei_ssh', 'ip': IPaddres, 'username': 'iteco', 'password': 'Iteco@2010'}
     net_connect = ConnectHandler(**huawei_5720)
     output = net_connect.send_config_from_file('display_commands.txt')
     print(output)
