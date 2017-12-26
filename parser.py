@@ -76,6 +76,9 @@ except sqlite3.IntegrityError as e:
     con.execute(text)
     print('Hostname "' + str(hostname) + '" is exist' )
     print('Update was made')
+finally:
+    print ("OK")
+print("#" * 100)
 
 con.commit()
 
