@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
-__author__ = 'nestvit'
+'''
+The program reads a log file with serial numbers of equipment and puts them
+to the table inventory2 in the database SQLite
+The program reads a hostname, type, software version, status of equipment and puts them
+to the table nodes in the database SQLite
+'''
+
+__author__ = 'Vitaly Nesterov'
+__author_email__ = "nestvitaly@gmail.com"
 
 import re
 import os, sys
@@ -7,15 +15,35 @@ import sqlite3
 import pprint
 import datetime
 
+# Entry point for program
+if __name__ == '__main__':
+    # Retrieve command line input
+    try:
+        log_file = str(sys.argv[1])
+        database = str(sys.argv[2])
+        print(log_file)
+        print(database)
+    except (IndexError, ValueError) as e:
+        # Indicates no command line parameter was provided
+        print("You must provide a log file and a database as a parameters to this script")
+        print("Example: ")
+        print("  python parser.py out.txt inventory.sqlite")
+        #Delete for prod
+        log_file = "out.txt"
+        database = "inventory.sqlite"
+
+        # Delete # for prod
+        #sys.exit(1)
+
 now = datetime.datetime.now()
 CurrentData = str(now.year) + "-" + str(now.month) + "-" + str(now.day)
 CurrentTime = str(now.hour) + ":" + str(now.minute) + ":" + str(now.second)
 
-with open("out.txt") as f:
+with open(log_file) as f:
     data  = f.read()
 #print(data)
 
-con = sqlite3.connect('C:/Users/NestVit/PycharmProjects/QueryInventory_S5720/inventory.sqlite')
+con = sqlite3.connect(database)
 cur = con.cursor()
 
 search = '\<(NAK07\S*)>'
@@ -61,14 +89,24 @@ for row in result:
 text = 'INSERT INTO "main"."Nodes" ("segment","Hostname","HW_type","SW_version","Status","Data","Time")\
             VALUES ("' + str(Segment) + '","' + str(hostname)  + '","' + str(Type) + '","' + str(SW_version) + \
            '","' + str(Status) + '","' + CurrentData + '","' + CurrentTime + '")'
+
+print()
+print("#" * 50)
+
 try:
     con.execute(text)
+    print('Hostname "' + str(hostname) + '" is new')
+    print('Hostname was added')
 except sqlite3.IntegrityError as e:
     text = 'UPDATE nodes set HW_type = "' + str(Type) + '", SW_version = "' + str(SW_version) + '", \
     Status = "' + str(Status) + '", Data = "' + CurrentData + '", Time = "' + CurrentTime + '" \
     WHERE Hostname = "' + str(hostname) + '"'
     con.execute(text)
-    #print("Error occured: ", e)
+    print('Hostname "' + str(hostname) + '" is exist' )
+    print('Update was made')
+finally:
+    print ("OK")
+print("#" * 50)
 
 con.commit()
 
